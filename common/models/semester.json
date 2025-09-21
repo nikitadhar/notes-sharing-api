@@ -1,0 +1,35 @@
+{
+  "name": "semester",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "Timestamp": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "course": {
+      "type": "belongsTo",
+      "model": "course",
+      "foreignKey": "courseId"
+    },
+    "subject": {
+      "type": "hasMany",
+      "model": "subject",
+      "foreignKey": "semesterId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
