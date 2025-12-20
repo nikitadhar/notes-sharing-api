@@ -2,7 +2,6 @@
   "mongodb": {
     "host": "127.0.0.1",
     "port": 27017,
-    "url":"mongodb+srv://nikitadhar142017_db_user:GOjieqJGPD3ipFM2@cluster0.puw85wy.mongodb.net/",
     "database": "sharingNotes",
     "name": "mongodb",
     "connector": "mongodb"
@@ -12,5 +11,10 @@
     "connector": "loopback-component-storage",
     "provider": "filesystem",
     "root": "./server/storage"
+  },
+  "mongoAtlas": {
+    "name": "mongoAtlas",
+    "connector": "mongodb",
+    "url": "${MONGO_ATLAS_URL}"
   }
 }

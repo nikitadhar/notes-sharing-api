@@ -14,41 +14,41 @@
     ]
   },
   "User": {
-    "dataSource": "mongodb"
+    "dataSource": "mongoAtlas"
   },
   "AccessToken": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": false
   },
   "ACL": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": false
   },
   "course": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "semester": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "subject": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "note": {
-    "dataSource": "mongodb",
+    "dataSource": "mongoAtlas",
     "public": true
   },
   "container": {
